@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NexusGamer</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>¡Bienvenido a NexusGamer!</h2>
+                <div class="form-toggle">
+                    <button onclick="showSection('loginSection')">Iniciar Sesión</button>
+                    <button onclick="showSection('signupSection')">Registrarse</button>
+                </div>
+            </div>
+
+            <!-- Sección de Iniciar Sesión -->
+            <section id="loginSection" class="section active">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Correo Electrónico</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Contraseña</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Iniciar Sesión</button>
+                </form>
+            </section>
+
+            <!-- Sección de Registro -->
+            <section id="signupSection" class="section">
+                <form id="signupForm">
+                    <div class="form-group">
+                        <label for="signupFullName">Nombre Completo</label>
+                        <input type="text" id="signupFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Correo Electrónico</label>
+                        <input type="email" id="signupEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Contraseña</label>
+                        <input type="password" id="signupPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirmar Contraseña</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">Acepto los términos y condiciones</label>
+                    </div>
+                    <button type="submit" class="btn-submit">Registrarse</button>
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
